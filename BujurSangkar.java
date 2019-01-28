@@ -1,15 +1,16 @@
 public class BujurSangkar {
-    public static void main(String [] args){
-        BujurSangkar1 satu = new BujurSangkar1();
-        satu.hasil();
-    }
-}
- class BujurSangkar1{
-    public int sisi = 4;
-    public double hasil;
+    private int sisi;
+    private double keliling;
 
-    public void hasil(){
-        hasil = 4*sisi;
-        System.out.println("Keliling Bujur Sangkarnya adalah = " + hasil);
+    public void hitungkeliling(){
+        this.keliling = 4*sisi;
+    }
+
+    public void setsisi(int sisi){
+        this.sisi = sisi;
+    }
+
+    public double getKeliling(){
+        return keliling;
     }
  }
